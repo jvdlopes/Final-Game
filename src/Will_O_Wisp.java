@@ -34,7 +34,7 @@ public class Will_O_Wisp {
         
         //bounce when we hit a side
         if(hitbox.getX() > GAME_WIDTH + image.getWidth()){
-            hitbox.setX(-1 - image.getWidth());
+            hitbox.setX((int)(Math.random() * 50 - 50));
             hitbox.setY((int)(Math.random() * 500));
         }
     }

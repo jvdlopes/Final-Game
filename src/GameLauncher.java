@@ -4,6 +4,8 @@ import org.newdawn.slick.state.StateBasedGame;
 
 public class GameLauncher extends StateBasedGame {
 
+    public static boolean fellTrap= false;
+    //if (GameLauncher.fellTrap ==false) {GameLauncher.fellTrap =true}
     public GameLauncher(String title) {
         super(title);
     }
