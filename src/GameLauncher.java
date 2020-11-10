@@ -10,7 +10,11 @@ public class GameLauncher extends StateBasedGame {
     
     public void initStatesList(GameContainer gc) throws SlickException {
        this.addState(new startScreen());
-       this.addState(new mainGame());
+       this.addState(new page1());
+       this.addState(new page2());
+       this.addState(new page3());
+       this.addState(new preGame());
+       this.addState(new Game());
     }
 
     public static void main(String args[]) throws SlickException {
