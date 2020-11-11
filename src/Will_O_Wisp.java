@@ -24,19 +24,23 @@ public class Will_O_Wisp {
         GAME_WIDTH=x;
     }
     
-    public boolean hit(int x, int y){
-        if(hitbox.contains(x, y)) return true;
+    public boolean hit(Rectangle x){
+        if(hitbox.intersects(x)) return true;
         else return false;
     }
     
     public void move(){
-        hitbox.setX(hitbox.getX() + 3);
+        hitbox.setX(hitbox.getX() + 5);
         
-        //bounce when we hit a side
+        //when we hit a side
         if(hitbox.getX() > GAME_WIDTH + image.getWidth()){
-            hitbox.setX((int)(Math.random() * 50 - 50));
+            hitbox.setX((int)(Math.random() * 100 - 25));
             hitbox.setY((int)(Math.random() * 500));
         }
+    }
+    
+    public int getY(){
+        return (int)hitbox.getY();
     }
     
     public void draw(){

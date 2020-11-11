@@ -7,17 +7,17 @@ import org.newdawn.slick.state.StateBasedGame;
 import org.newdawn.slick.state.transition.FadeInTransition;
 import org.newdawn.slick.state.transition.FadeOutTransition;
 
-public class page3 extends BasicGameState {
+public class page5 extends BasicGameState {
     Background b;
     public void init(GameContainer gc, StateBasedGame sbg) throws SlickException {
-       b = new Background(3);
+       b = new Background(5);
     }
 
     public void update(GameContainer gc, StateBasedGame sbg, int i) throws SlickException { 
         Input in = gc.getInput();
         
-        if (in.isKeyDown(Input.KEY_1)){sbg.enterState(4, new FadeOutTransition(), new FadeInTransition());}
-        if (in.isKeyDown(Input.KEY_2)){sbg.enterState(1, new FadeOutTransition(), new FadeInTransition());}
+        //if (in.isKeyDown(Input.KEY_1)){sbg.enterState(4, new FadeOutTransition(), new FadeInTransition());}
+        if (in.isKeyDown(Input.KEY_2)){sbg.enterState(6, new FadeOutTransition(), new FadeInTransition());}
     }
 
     public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException {
@@ -25,7 +25,7 @@ public class page3 extends BasicGameState {
     }
     
     public int getID() {
-       return 3;  //this id will be different for each screen
+       return 5;  //this id will be different for each screen
     }
 
     

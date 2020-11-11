@@ -16,7 +16,7 @@ public class preGame extends BasicGameState {
     public void update(GameContainer gc, StateBasedGame sbg, int i) throws SlickException { 
         Input in = gc.getInput();
         if (in.isMousePressed(Input.MOUSE_LEFT_BUTTON)){
-           sbg.enterState(6, new FadeOutTransition(), new FadeInTransition());
+           sbg.enterState(11, new FadeOutTransition(), new FadeInTransition());
        }
     }
 
@@ -25,7 +25,7 @@ public class preGame extends BasicGameState {
     }
     
     public int getID() {
-       return 5;  //this id will be different for each screen
+       return 10;  //this id will be different for each screen
     }
 
     

@@ -13,18 +13,18 @@ public class Background {
     private Image image;
     Rectangle textbox;
     private int id;
-    private String[] maps = {"Dragon_Slayer_Longsword", "map(1)", "map(1)", "map(1)","map(1)","map(1)"};//,"","","","",""};
+    private String[] maps = {"Dragon_Slayer_Longsword", "map(1)", "map(1)", "map(1)","Astroid","Astroid","Astroid","Astroid","Astroid","Astroid","Astroid"};
     private String[][] text = {
         {"Click the mouse to start"},
         {"You stand at the base of the giant mound called Dragon Barrow.","It is said to have a magical blade in its depths,","one that was used to fell the adult dragon that now lays buried before you.","After climbing to the top you notice some white rocks jutting out."},
         {"You search around the mound but aren't able to discover much."},
         {"You go from rock to rock inspecting them,", "eventually you make it to a rock that seems to have an area bellow it"},
-        {"You have fallen in a ptifall trap! Get to the top in order to survive"}, 
+        {"You push with all your might and finally tip the rock over.", "Doing so reveals a decrepit set of stone stairs leading into", "the blackness of the underground"}, 
+        {"You descend down the stairs with a gleam of determination in your ", "eye, once at the bottom you find yourself in a circular room with ", "two tunnels. The tunnel in front of you is dark and reeks of death and decay,", "while the tunnel to your right has three faint lights seemingly dancing around a chest"},
+        {"test"},
         {""},
         {""},
-        {""},
-        {""},
-        {""},
+        {"You have fallen in a ptifall trap! Get to the top in order to survive"},
         {""}
     };
     private String[][] options = {
@@ -32,12 +32,12 @@ public class Background {
         {"Press 1 to investigate the surroding area", "Press 2 to investigate the white rocks"},
         {"Press 1 to go back"},
         {"Press 1 to try and topple the rock", "Press 2 to go back"},
+        {"Click to continue"},
+        {"Press 1 to investigate the front tunnel", "Press 2 to investigate the dancing lights"},
+        {"test"},
+        {""},
+        {""},
         {"click to start your climb."},
-        {""},
-        {""},
-        {""},
-        {""},
-        {""},
         {""}
     };
 

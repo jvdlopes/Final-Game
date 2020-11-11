@@ -15,6 +15,9 @@ public class GameLauncher extends StateBasedGame {
        this.addState(new page1());
        this.addState(new page2());
        this.addState(new page3());
+       this.addState(new page4());
+       this.addState(new page5());
+       this.addState(new page6());
        this.addState(new preGame());
        this.addState(new Game());
     }
