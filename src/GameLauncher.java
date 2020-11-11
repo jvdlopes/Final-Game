@@ -6,6 +6,7 @@ public class GameLauncher extends StateBasedGame {
 
     public static boolean hasRope= false;
     public static int lives = 5;
+    public static int gold= 0;
     //if (GameLauncher.hasRope ==false) {GameLauncher.hasRope =true}
     public GameLauncher(String title) {
         super(title);
@@ -22,6 +23,9 @@ public class GameLauncher extends StateBasedGame {
        this.addState(new preGame7());
        this.addState(new Game8());
        this.addState(new gameOver9());
+       this.addState(new gameWin10());
+       this.addState(new page11());
+       this.addState(new page12());
     }
 
     public static void main(String args[]) throws SlickException {

@@ -82,12 +82,16 @@ public class Game8 extends BasicGameState {
         for (Will_O_Wisp a : enemies) {
             if (a.hit(hitBox)) {
                 enemies.remove(a);
-                enemies.add(new Will_O_Wisp(mx + 100, a.getY()));
+                enemies.add(new Will_O_Wisp(mx + 150, a.getY()));
                 GameLauncher.lives--;
                 break;
             }
         }
 
+        if(hitBox.getY() <=0){
+            sbg.enterState(10, new FadeOutTransition(), new FadeInTransition());
+        }
+        
         if (GameLauncher.lives <= 0) {
             /*for (Will_O_Wisp a : enemies) {
                 enemies.remove(a);
