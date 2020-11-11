@@ -18,6 +18,7 @@ public class page1 extends BasicGameState {
     
     public void init(GameContainer gc, StateBasedGame sbg) throws SlickException {
        b= new Background(1);
+        System.out.println(GameLauncher.hasRope);
     }
     
 

@@ -4,8 +4,9 @@ import org.newdawn.slick.state.StateBasedGame;
 
 public class GameLauncher extends StateBasedGame {
 
-    public static boolean fellTrap= false;
-    //if (GameLauncher.fellTrap ==false) {GameLauncher.fellTrap =true}
+    public static boolean hasRope= false;
+    public static int lives = 5;
+    //if (GameLauncher.hasRope ==false) {GameLauncher.hasRope =true}
     public GameLauncher(String title) {
         super(title);
     }
@@ -18,8 +19,9 @@ public class GameLauncher extends StateBasedGame {
        this.addState(new page4());
        this.addState(new page5());
        this.addState(new page6());
-       this.addState(new preGame());
-       this.addState(new Game());
+       this.addState(new preGame7());
+       this.addState(new Game8());
+       this.addState(new gameOver9());
     }
 
     public static void main(String args[]) throws SlickException {

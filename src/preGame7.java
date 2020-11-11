@@ -7,16 +7,16 @@ import org.newdawn.slick.state.StateBasedGame;
 import org.newdawn.slick.state.transition.FadeInTransition;
 import org.newdawn.slick.state.transition.FadeOutTransition;
 
-public class preGame extends BasicGameState {
+public class preGame7 extends BasicGameState {
     Background b;
     public void init(GameContainer gc, StateBasedGame sbg) throws SlickException {
-       b = new Background(4);
+       b = new Background(7);
     }
 
     public void update(GameContainer gc, StateBasedGame sbg, int i) throws SlickException { 
         Input in = gc.getInput();
         if (in.isMousePressed(Input.MOUSE_LEFT_BUTTON)){
-           sbg.enterState(11, new FadeOutTransition(), new FadeInTransition());
+           sbg.enterState(8, new FadeOutTransition(), new FadeInTransition());
        }
     }
 
@@ -25,7 +25,7 @@ public class preGame extends BasicGameState {
     }
     
     public int getID() {
-       return 10;  //this id will be different for each screen
+       return 7;  //this id will be different for each screen
     }
 
     
