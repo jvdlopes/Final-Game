@@ -13,7 +13,7 @@ public class Background {
     private Image image;
     Rectangle textbox;
     private int id;
-    private String[] maps = {"Dragon_Slayer_Longsword", "map(1)", "map(1)", "map(1)","Astroid","Astroid","Astroid","Astroid","Astroid","Astroid","Astroid","grass","grass","grass","grass"};
+    private String[] maps = {"Dragon_Slayer_Longsword", "map(1)", "map(1)", "map(1)","Astroid","Astroid","Astroid","Astroid","Astroid","Astroid","Astroid","grass","grass","grass","grass","grass","grass","grass","grass","grass","grass","grass"};
     private String[][] text = {
         {"Click the mouse to start"},
         {"You stand at the base of the giant mound called Dragon Barrow.","It is said to have a magical blade in its depths,","one that was used to fell the adult dragon that now lays buried before you.","After climbing to the top you notice some white rocks jutting out."},
@@ -27,9 +27,15 @@ public class Background {
         {"As the wisps shock you repeatedly, you loose your grip and fall back","to the floor.","With not enough energy left to try again, you lie there motionless..."},
         {"You make it the top of the trap and get onto the saftey of","solid ground once more. You turn around to exact your revenge", "on the fae that tried to kill you, but they all disappeared."},
         {"Begrudgingly you move onwards into the small alclove.","There doesn't seem to be much in it except for a rotting", "wooden chest set on one side"},
-        {"You carefully search the room and the chest but don't find", "anything that resembles a chest"},
-        {""},
-        {""},
+        {"You carefully search the room and the chest but don't find", "anything that resembles a trap"},
+        {"The wood almost falls apart at your touch as you open the chest,","but you manage to open the lid.","inside are various gems and jewels worth 500 gold total"},
+        {"Once you make it back to the circular room you turn your attention", "towards the only other tunnel."},
+        {"As you travel down he tunnal the smell of death burns", "itself into your nostrils. After walking 200 meters you","arrive in a large cave, inside there are 4 sarcophagi, two on each side,","and a pile of bones at the far end"},
+        {"The pile of bones start to vibrate at your touch, you step back in ","horror and are ready to fight as the bones start to mend together.","Before you now stands a skeletal horse with a saddle engraved with lady Alagondar's crest.","Her trusty steed bows to you before galloping down the tunnel back towards the main room"},
+        {"When the horse makes it into the main room,", "it goes straight to a specific patch of wall.", "With a boney hoof it taps the wall,", "a few moments later the wall crumbles away to reveal a secret passageway"},
+        {"You enter the room and find yourself in a large polished cavern.", "The walls have engravings of the glorious battle between Alagondar", "and her mighty foe, a huge dragon. The horse goes straight to the sarcophagus and bows to it before crumbling away."},
+        {"As you look more closely at the engravings, you realize that the white", "material they are made out of are actually bone! Following the engravings you find the a huge dragon's skull.", "you collect 5000 gold worth of dragon fangs and talons"},
+        {"You open the sarcophagus and find the legendary sword you were searching for!", "As you reach for the sword the skeleton's hands move to present you the sword.","You hear a feminene voice say \"Use it wisely. Use it for the good of my people.\""}
     };
     private String[][] options = {
         {""},
@@ -45,8 +51,14 @@ public class Background {
         {"Click to continue"},
         {"Press 1 to open the chest","Press 2 to search the rooms for traps"},
         {"Press 1 to open the chest"},
-        {""},
-        {""},
+        {"Press 1 to return back to the circular room"},
+        {"Click to continue"},
+        {"Press 1 to examine the sarcophogi","Press 2 to examine the bones"},
+        {"Press 1 to follow the horse"},
+        {"Click to continue"},
+        {"Press 1 to search the cave","Press 2 to search the sarcophagus"},
+        {"Press 1 to search sarcophagus"},
+        {""}
     };
 
     public Background(int x) throws SlickException {
@@ -76,5 +88,12 @@ public class Background {
     
     public int getId(){
         return id;
+    }
+    
+    public String toSting(){
+    String str = "";
+    if(GameLauncher.hasRope==true) str += ", a grappling hook";
+    str += GameLauncher.gold + " and pieces of gold.";
+    return str;
     }
 }

@@ -26,6 +26,15 @@ public class GameLauncher extends StateBasedGame {
        this.addState(new gameWin10());
        this.addState(new page11());
        this.addState(new page12());
+       this.addState(new page13());
+       this.addState(new page14());
+       this.addState(new page15());
+       this.addState(new page16());
+       this.addState(new page17());
+       this.addState(new page18());
+       this.addState(new page19());
+       this.addState(new page20());
+       this.addState(new page21());
     }
 
     public static void main(String args[]) throws SlickException {
