@@ -43,6 +43,10 @@ public class Will_O_Wisp {
         return (int)hitbox.getY();
     }
     
+    public int getX(){
+        return (int)hitbox.getX();
+    }
+    
     public void draw(){
         image.draw(hitbox.getX(), hitbox.getY());
     }    

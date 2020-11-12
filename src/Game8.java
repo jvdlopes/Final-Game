@@ -20,7 +20,6 @@ public class Game8 extends BasicGameState {
     Rectangle hitBox;
 
     public void init(GameContainer gc, StateBasedGame sbg) throws SlickException {
-        System.out.println(GameLauncher.hasRope);
         b = new Background(8);
         enemies = new ArrayList();
         Will_O_Wisp.setGameSize(800, 600);
@@ -82,7 +81,7 @@ public class Game8 extends BasicGameState {
         for (Will_O_Wisp a : enemies) {
             if (a.hit(hitBox)) {
                 enemies.remove(a);
-                enemies.add(new Will_O_Wisp(mx + 150, a.getY()));
+                enemies.add(new Will_O_Wisp(a.getX() + 150, a.getY()));
                 GameLauncher.lives--;
                 break;
             }
