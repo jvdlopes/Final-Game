@@ -16,7 +16,10 @@ public class page19 extends BasicGameState {
     public void update(GameContainer gc, StateBasedGame sbg, int i) throws SlickException { 
         Input in = gc.getInput();
         
-        if (in.isKeyDown(Input.KEY_1)){sbg.enterState(20, new FadeOutTransition(), new FadeInTransition());}
+        if (in.isKeyDown(Input.KEY_1)){
+            GameLauncher.gold += 5000;
+            sbg.enterState(20, new FadeOutTransition(), new FadeInTransition());
+        }
     
     }
 

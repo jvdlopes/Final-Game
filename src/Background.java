@@ -35,7 +35,8 @@ public class Background {
         {"When the horse makes it into the main room,", "it goes straight to a specific patch of wall.", "With a boney hoof it taps the wall,", "a few moments later the wall crumbles away to reveal a secret passageway"},
         {"You enter the room and find yourself in a large polished cavern.", "The walls have engravings of the glorious battle between Alagondar", "and her mighty foe, a huge dragon. The horse goes straight to the sarcophagus and bows to it before crumbling away."},
         {"As you look more closely at the engravings, you realize that the white", "material they are made out of are actually bone! Following the engravings you find the a huge dragon's skull.", "you collect 5000 gold worth of dragon fangs and talons"},
-        {"You open the sarcophagus and find the legendary sword you were searching for!", "As you reach for the sword the skeleton's hands move to present you the sword.","You hear a feminene voice say \"Use it wisely. Use it for the good of my people.\""}
+        {"You open the sarcophagus and find the legendary sword you were searching for!", "As you reach for the sword the skeleton's hands move to present you the sword.","You hear a feminene voice say \"Use it wisely. Use it for the good of my people.\""},
+        {"You take the sword and leave the with everything you have collected:",("the legendary dragonslayer sword" + toString())}
     };
     private String[][] options = {
         {""},
@@ -58,6 +59,7 @@ public class Background {
         {"Click to continue"},
         {"Press 1 to search the cave","Press 2 to search the sarcophagus"},
         {"Press 1 to search sarcophagus"},
+        {"Click to continue"},
         {""}
     };
 
@@ -90,10 +92,10 @@ public class Background {
         return id;
     }
     
-    public String toSting(){
+    public String toString(){
     String str = "";
     if(GameLauncher.hasRope==true) str += ", a grappling hook";
-    str += GameLauncher.gold + " and pieces of gold.";
+    str += " and" + GameLauncher.gold + "pieces of gold.";
     return str;
     }
 }
