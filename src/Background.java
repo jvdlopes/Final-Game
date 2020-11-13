@@ -13,7 +13,7 @@ public class Background {
     private Image image;
     Rectangle textbox;
     private int id;
-    private String[] maps = {"Dragon_Slayer_Longsword", "map(1)", "map(1)", "map(1)", "Astroid", "Astroid", "Astroid", "Astroid", "Astroid", "Astroid", "Astroid", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass","android","android","android","android"};
+    private String[] maps = {"Dragon_Slayer_Longsword", "map(1)", "map(2)", "map(3)", "map(4)", "map(6)", "mistake", "map(7)", "pitfall", "game_over", "map(10)", "map(11)", "map(12)", "map(13)", "map(14)", "map(15)", "map(16)", "map(17)", "map(18)", "map(19)", "map(20)", "win","map(23)","floor","game_over","map(25)"};
     private String[][] text = {
         {"Click the mouse to start"},
         {"You stand at the base of the giant mound called Dragon Barrow.", "It is said to have a magical blade in its depths,", "one that was used to fell the adult dragon that now lays buried before you.", "After climbing to the top you notice some white rocks jutting out."},

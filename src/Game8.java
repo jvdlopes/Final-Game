@@ -30,7 +30,7 @@ public class Game8 extends BasicGameState {
             enemies.add(new Will_O_Wisp(rx, ry));
         }
 
-        hero = new Image("images/astroid.png");
+        hero = new Image("images/hero.png");
         hitBox = new Rectangle(400, 550, hero.getWidth(), hero.getHeight());
         
 

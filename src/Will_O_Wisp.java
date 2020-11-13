@@ -10,7 +10,7 @@ public class Will_O_Wisp {
     private static int GAME_HEIGHT;
     
     public Will_O_Wisp(int x, int y) throws SlickException {
-        image = new Image("images/astroid.png");
+        image = new Image("images/wisp.png");
         hitbox = new Rectangle(x, y, image.getWidth(), image.getHeight());
         
     }

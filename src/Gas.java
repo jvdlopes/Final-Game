@@ -11,7 +11,7 @@ public class Gas {
     private static int GAME_WIDTH;
     private static int GAME_HEIGHT;
     public Gas(int x, int y) throws SlickException{
-        image = new Image("images/astroid.png");
+        image = new Image("images/dust.png");
         hitbox = new Rectangle(x, y, image.getWidth(), image.getHeight());
         
         //randomly assign from -3 to +3 with zero not allowed

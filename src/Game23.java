@@ -24,7 +24,7 @@ public class Game23 extends BasicGameState {
         b = new Background(23);
         
         Gas.setGameSize(800, 600);
-        hero = new Image("images/astroid.png");
+        hero = new Image("images/hero.png");
         hitBox = new Rectangle(400, 300, hero.getWidth(), hero.getHeight());
         reset();
     }
