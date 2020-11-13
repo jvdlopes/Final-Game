@@ -42,7 +42,7 @@ public class GameLauncher extends StateBasedGame {
     }
 
     public static void main(String args[]) throws SlickException {
-        GameLauncher game = new GameLauncher("Testing Game");
+        GameLauncher game = new GameLauncher("Quest for the Dragonslayer Sword");
         AppGameContainer app = new AppGameContainer(game);
         app.setDisplayMode(800, 600, false);
         app.setShowFPS(false);

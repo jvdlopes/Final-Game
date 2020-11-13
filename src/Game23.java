@@ -95,7 +95,7 @@ public class Game23 extends BasicGameState {
         if (GameLauncher.lives > 0) {
             timer2++;
             timer++;
-            if (timer == 200) {
+            if (timer == 150) {
                 timer = 0;
                 int c = (int) (Math.random() * 4);
                 if (c == 1) {
@@ -118,7 +118,7 @@ public class Game23 extends BasicGameState {
             }
         }
 
-        if (timer2 == 1000) {
+        if (timer2 == 700) {
             sbg.enterState(25, new FadeOutTransition(), new FadeInTransition());
         }
 
